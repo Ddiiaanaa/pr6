@@ -90,10 +90,16 @@ article {
     flex-direction: row;
     flex-wrap: wrap;
 }
+h2, .d {
+    text-align: left;
+}
 
 @media (min-width: 992px) {
-    article {
-        flex: 300px;
+    .base, .childhool, .school {
+        flex: 1 300px;
+    }
+    .leisure, .university {
+        flex: 1 450px;
     }
     article {
         justify-content: space-evenly;
@@ -101,7 +107,7 @@ article {
 }
 @media (min-width: 768px) and (max-width: 991px ){
     article {
-        flex: 350px;  
+        flex: 1 350px;  
     }
     article {
         justify-content: space-evenly;
