@@ -1,0 +1,59 @@
+table,
+th,
+td {
+    border: 2px solid black;
+}
+
+th,
+td {
+    text-align: center;
+    padding:10px;
+}
+
+td {
+    height: 50px;
+}
+
+td:nth-child(odd) {
+    background-color: gray;
+}
+h1 { 
+    text-align: center;
+    text-size-adjust: 22px;
+}
+.n {
+    font-style: italic;
+}
+h2 {
+    text-align: center;
+}
+th {
+    text-align: center;
+    background-color: green;
+    color: red;
+    font-style: bold;
+}    
+.l-s {
+    text-align: right;
+}
+@media (min-width: 992px) {
+    th {
+        font-size: 130%;
+    }
+    td {
+        font-size: 120%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px ){
+   th {
+        font-size: 120%;
+    }
+    td {
+        font-size: 110%;
+    }
+}
+@media (max-width: 767px) {
+     th {
+        font-size: 110%;
+    }
+}

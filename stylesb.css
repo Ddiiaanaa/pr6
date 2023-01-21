@@ -1,0 +1,114 @@
+.p:link,
+.p:visited {
+    text-decoration: none;
+    background-color: blue;
+    border: 2px solid yellow;
+    color: white;
+    display: block;
+    width: 230px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.p:hover {
+    background-color: magenta;
+    color: black;
+}
+.p:active {
+    background-color: yellow;
+    color: darkblue;
+}
+
+.p1 {
+    background-color: rgb(189, 161, 134);
+    color: rgb(255, 241, 241);
+}
+
+.p2 {
+    background-color: rgb(65, 126, 150);
+    color: rgb(226, 226, 226);
+}
+
+.p3 {
+    background-color: rgb(190, 149, 187);
+    color: rgb(236, 236, 236);
+}
+
+.p4 {
+    background-color: rgb(161, 117, 117);
+    color: rgb(219, 219, 219);
+}
+
+.p5 {
+    background-color: rgb(114, 131, 180);
+    color: rgb(212, 212, 212);
+}
+h1 { 
+    text-align: center;
+    font-size: 22px;
+}
+.n {
+    font-style: italic;
+}
+h3 {
+    text-align: center;
+}
+article {
+    font-size: 120%;
+}
+h2 {
+    font-size: 120%;
+}
+.d:link {
+    font-weight: bold;
+}
+.y {
+    text-transform: uppercase;
+}
+
+h2 {
+    border: 1px solid black;
+}
+.b {
+    background-color: rgb(189, 161, 134);
+}
+.c {
+    background-color: rgb(65, 126, 150);
+}
+.s {
+    background-color: rgb(190, 149, 187);
+}
+.l {
+    background-color: rgb(161, 117, 117); 
+}
+.u {
+    background-color: rgb(114, 131, 180);
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+    article {
+        flex: 300px;
+    }
+    article {
+        justify-content: space-evenly;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px ){
+    article {
+        flex: 350px;  
+    }
+    article {
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 767px) {
+    article {
+        flex-direction: column;
+    }
+}

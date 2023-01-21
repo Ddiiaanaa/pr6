@@ -1,0 +1,62 @@
+.A {
+    color: aquamarine
+}
+.A:visited {
+    color: royalblue
+}
+
+.B {
+    color: hotpink
+}
+.B:visited {
+    color: cadetblue
+}
+
+.C {
+    color: mediumslateblue
+}
+.C:visited {
+    color: magenta
+}
+
+.D {
+    color: darkcyan
+}
+.D:visited {
+    color: purple
+}
+
+h1 { 
+    text-align: center;
+    font-size: 24px;
+}
+.t {
+    font-size: 120%;
+}
+div {
+    padding: 10px;
+    margin: 10px;
+}
+div {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width: 992px) {
+    div {
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px ){
+    div {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 16px 100px;
+    }
+}
+@media (max-width: 767px) {
+    div {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,59 @@
+.p li:nth-child(odd) {
+    background-color: gray;
+    color: rgb(255, 163, 43);
+}
+.p li:nth-child(even) {
+    background-color: white;
+}
+
+.d li:nth-child(3) {
+    cursor: pointer;
+}
+
+.d li:nth-child(5) {
+    cursor: pointer;
+}
+
+.d li:nth-child(4) {
+    background-color: orange;
+}
+h1 { 
+    text-align: center;
+    text-size-adjust: 22px;
+}
+p {
+    font-style: italic;
+}
+h2 {
+    text-align: center;
+}
+.p {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+}
+.d {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+}
+
+@media (min-width: 992px) {
+    .p, .d{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .p, .d {
+        flex: 450px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px ) {
+    .p, .d {
+        flex-wrap: wrap;
+    }    
+}
+@media (max-width: 767px) {
+    .p, .d {
+        flex-wrap: wrap;
+    }  
+}
