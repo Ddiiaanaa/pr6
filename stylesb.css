@@ -102,7 +102,7 @@ h2, .d {
         flex: 1 450px;
     }
     article {
-        justify-content: space-evenly;
+        flex-direction: row;
     }
 }
 @media (min-width: 768px) and (max-width: 991px ){
@@ -110,7 +110,7 @@ h2, .d {
         flex: 1 350px;  
     }
     article {
-        justify-content: space-evenly;
+        flex-direction: row;
     }
 }
 @media (max-width: 767px) {
