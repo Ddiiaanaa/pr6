@@ -85,7 +85,7 @@ h2 {
     background-color: rgb(114, 131, 180);
 }
 
-article {
+.content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -95,26 +95,40 @@ h2, .d {
 }
 
 @media (min-width: 992px) {
+    .content {
+        flex-direction: row;
+    }
     .base, .childhool, .school {
-        flex: 1 300px;
+        padding: 10px;
+        margin: 10px;
+        width: 25%;
+        justify-content: space-evenly;
     }
     .leisure, .university {
-        flex: 1 450px;
-    }
-    article {
-        flex-direction: row;
+        padding: 10px;
+        margin: 10px;
+        width: 45%;
+        justify-content: space-between;
     }
 }
 @media (min-width: 768px) and (max-width: 991px ){
-    article {
-        flex: 1 350px;  
-    }
-    article {
+    .content {
         flex-direction: row;
+    }   
+    .base, .childhool, .school, .leisure{
+        padding: 10px;
+        margin: 20px;
+        width: 40%;
+        justify-content: space-between;
+    }
+    .university {
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
     }
 }
 @media (max-width: 767px) {
-    article {
+    .content {
         flex-direction: column;
     }
 }
